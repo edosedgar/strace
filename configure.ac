@@ -830,6 +830,8 @@ AC_CONFIG_FILES([Makefile
 		 tests-m32/Makefile
 		 tests-mx32/Makefile
 		 strace.1
+		 tools/Makefile
+		 tools/asinfo/Makefile
 		 strace.spec
 		 debian/changelog])
 AC_OUTPUT
