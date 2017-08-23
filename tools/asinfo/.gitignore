@@ -1,2 +1,5 @@
+arch_includes.h
+arch_personalities.h
 asinfo
 asinfo.1
+Makemodule.am
