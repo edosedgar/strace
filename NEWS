@@ -31,6 +31,10 @@ Noteworthy changes in release ?.?? (????-??-??)
   * Fixed output formatting of blkpg_ioctl_arg, dm_name_list, and iocb
     structures.
 
+* New tools
+  * Added asinfo tool, that is purposed to provide information about
+    system calls and architectures.
+
 Noteworthy changes in release 4.18 (2017-07-05)
 ===============================================
 
