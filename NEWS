@@ -56,6 +56,10 @@ Noteworthy changes in release ?.?? (????-??-??)
   * Build-time requirement for the mpers support has been lowered from gawk 4
     to gawk 3.
 
+* New tools
+  * Added asinfo tool, that is purposed to provide information about
+    system calls and architectures.
+
 Noteworthy changes in release 4.20 (2017-11-13)
 ===============================================
 
