@@ -1,0 +1,16 @@
+*.dir
+*.log
+*.o
+*.trs
+set_arch
+set_mult_arch
+list_arch
+set_abi
+set_mult_abi
+get_arch_abi
+get_sname
+get_snum
+com_disp_wrong_keys
+multiarch_get_sname
+multiarch_get_snum
+format_output

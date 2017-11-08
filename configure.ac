@@ -990,6 +990,7 @@ AC_CONFIG_FILES([Makefile
 		 tools/asinfo/asinfo.1
 		 tools/Makefile
 		 tools/asinfo/Makefile
+		 tools/asinfo/tests/Makefile
 		 strace.spec
 		 debian/changelog])
 AC_OUTPUT
