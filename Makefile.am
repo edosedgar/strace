@@ -85,13 +85,32 @@ libstrace_a_SOURCES =	\
 	upoke.c		\
 	# end of libstrace_a_SOURCES
 
+strace_LDADD += libcommon.a
+noinst_LIBRARIES += libcommon.a
+libcommon_a_CPPFLAGS = $(strace_CPPFLAGS)
+libcommon_a_CFLAGS = $(strace_CFLAGS)
+libcommon_a_SOURCES =	\
+	basic_filters.c	\
+	error_prints.c	\
+	error_prints.h	\
+	filter.h	\
+	macros.h	\
+	number_set.c	\
+	number_set.h	\
+	string_to_uint.h	\
+	string_to_uint.c	\
+	sysent_shorthand_defs.h \
+	sysent_shorthand_undefs.h \
+	xmalloc.c		\
+	xmalloc.h		\
+	#end of libcommon_a_SOURCES
+
 strace_SOURCES =	\
 	access.c	\
 	affinity.c	\
 	aio.c		\
 	alpha.c		\
 	arch_defs.h	\
-	basic_filters.c	\
 	bind.c		\
 	bjm.c		\
 	block.c		\
@@ -119,8 +138,6 @@ strace_SOURCES =	\
 	dyxlat.c	\
 	empty.h		\
 	epoll.c		\
-	error_prints.c	\
-	error_prints.h	\
 	evdev.c		\
 	eventfd.c	\
 	execve.c	\
@@ -140,7 +157,6 @@ strace_SOURCES =	\
 	file_handle.c	\
 	file_ioctl.c	\
 	filter_qualify.c \
-	filter.h	\
 	flock.c		\
 	flock.h		\
 	fs_x_ioctl.c	\
@@ -179,7 +195,6 @@ strace_SOURCES =	\
 	lookup_dcookie.c \
 	loop.c		\
 	lseek.c		\
-	macros.h	\
 	mem.c		\
 	membarrier.c	\
 	memfd_create.c	\
@@ -213,8 +228,6 @@ strace_SOURCES =	\
 	nsfs.h          \
 	nsig.h		\
 	numa.c		\
-	number_set.c	\
-	number_set.h	\
 	oldstat.c	\
 	open.c		\
 	or1k_atomic.c	\
@@ -295,14 +308,11 @@ strace_SOURCES =	\
 	statx.c		\
 	statx.h		\
 	strace.c	\
-	string_to_uint.h \
-	string_to_uint.c \
+	supported_personalities.h \
 	swapon.c	\
 	syscall.c	\
 	sysctl.c	\
 	sysent.h	\
-	sysent_shorthand_defs.h \
-	sysent_shorthand_undefs.h \
 	sysinfo.c	\
 	syslog.c	\
 	sysmips.c	\
@@ -328,8 +338,6 @@ strace_SOURCES =	\
 	xattr.c		\
 	xlat.c		\
 	xlat.h		\
-	xmalloc.c	\
-	xmalloc.h	\
 	xstring.h	\
 	# end of strace_SOURCES
 

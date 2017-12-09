@@ -30,6 +30,7 @@
 /ioctlent[012].h
 /ioctls_all[012].h
 /ioctlsort[012]
+/libcommon.a
 /libmpers-m32.a
 /libmpers-mx32.a
 /libstrace.a
